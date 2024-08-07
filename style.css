@@ -1,0 +1,266 @@
+* {
+    background: aliceblue;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 95%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 95%;
+    background: aliceblue;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+.mensagemParaDigitarTexto {
+    border: none;
+    color: darkblue;
+    margin-top: 90px;
+}
+
+::placeholder {
+    color: darkblue;
+}
+
+.mensagemParaDigitarTexto:focus {
+    outline: none;
+}
+
+.nenhumaMensagemEncontrada {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: white;
+    background-image: url(./assets/Moça\ com\ a\ lupa.jpg);
+    background-repeat: no-repeat;
+    width: 336px;
+    height: 820px;
+    border-radius: 24px;
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    color: black;
+}
+
+.nenhumaMensagemEncontrada:focus {
+    outline: none;
+}
+
+.container_saida_com_dados {
+    background: white;
+    background-image: url(./assets/imagem-criptografia2.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 336px;
+    height: 820px;
+    border-radius: 24px;
+    margin-left: 98px;
+    margin-top: 20px;
+    padding: 30px;
+}
+
+.saida_do_texto {
+    width: 336px;
+    height: 400px;
+    background-image: url(./assets/imagem-criptografia2.jpg);
+    border: none;
+    border-radius: 13px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.container__botoes {
+    display: flex;
+    margin-top: 18px;
+}
+
+.botaoCriptografar {
+    color: rgb(199, 196, 196);
+    background-color: blue;
+    border-radius: 24px;
+    border: 1px solid darkblue;
+    width: 328px;
+    height: 67px;
+    cursor: pointer;
+}
+
+.botaoCriptografar:hover {
+    background-color: black;
+}
+
+.botaoDescriptografar {
+    color: rgb(199, 196, 196);
+    background-color: blue;
+    border-radius: 24px;
+    border: 1px solid darkblue;
+    width: 328px;
+    height: 67px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.botaoDescriptografar:hover {
+    background-color: black;
+}
+
+.botaoCopiar {
+    color: beige;
+    background-color: gray;
+    border-radius: 24px;
+    border: 1px solid darkblue;
+    width: 336px;
+    height: 67px;
+    cursor: pointer;
+    margin-left: 6px;
+    margin-top: 10px;
+}
+
+.botaoCopiar:hover {
+    background-color: black;
+}
+
+footer {
+    color: rgb(24, 14, 14);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    background: aliceblue;
+    padding: 10px 20px;
+}
+
+@media (max-width: 768px) {
+    * {
+        font-size: 24px;
+    }
+
+    main {
+        flex-direction: column;
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+
+    .logoAlura {
+        margin-left: 5px;
+        padding-top: 5px;
+    }
+
+    .mensagemParaDigitarTexto {
+        margin-top: 20px;
+        margin-left: 5px;
+    }
+
+    .saida_do_texto {
+        width: 95%;
+        height: auto;
+        margin-top: 10px;
+        margin-left: 5px;
+        text-align: center;
+    }
+
+    .nenhumaMensagemEncontrada, .container_saida_com_dados {
+        width: 95%;
+        height: auto;
+        margin-left: 0;
+        margin-top: 10px;
+        padding: 10px;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .container__botoes {
+        flex-direction: column;
+    }
+
+    .botaoCriptografar, .botaoDescriptografar, .botaoCopiar {
+        width: 95%;
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    * {
+        font-size: 28px;
+    }
+
+    main {
+        flex-direction: column;
+        margin-left: 40px;
+        margin-bottom: 40px;
+    }
+
+    .logoAlura {
+        margin-left: 8px;
+        padding-top: 8px;
+    }
+
+    .mensagemParaDigitarTexto {
+        margin-top: 20px;
+    }
+
+    .saida_do_texto {
+        width: 95%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .nenhumaMensagemEncontrada, .container_saida_com_dados {
+        width: 95%;
+        height: auto;
+        margin-left: 0;
+        margin-top: 15px;
+        padding: 15px;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .container__botoes {
+        flex-direction: row;
+    }
+
+    .botaoCopiar {
+        width: 95%;
+        margin-left: 10px;
+        
+    }
+    .botaoCriptografar, .botaoDescriptografar {
+        width: 95%;
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .botaoCriptografar, .botaoDescriptografar {
+        width: 95%;
+        margin-right: 12px;
+    }
+}

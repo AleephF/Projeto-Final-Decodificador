@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Cripto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="./assets/Logo alura.png" alt="Logo da alura" class="logoAlura">
+    </header>
+    <main class="container">
+        <section>
+            <div class="container__entrada" id="entrada">
+                <textarea name="inputMensagem" id="inputMensagem" class="mensagemParaDigitarTexto" cols="30" rows="10" placeholder="Digite seu texto aqui..."></textarea>
+                <p class="texto__paragrafo">
+                    <img src="/assets/Group.png" alt="Apenas letras minúsculas e sem acento">
+                    apenas letras minúsculas e sem acento.
+                </p>
+                <div class="container__botoes">
+                    <button onclick="botao_criptografar()" id="botao_criptografar" class="botaoCriptografar">Criptografar</button>
+                    <button onclick="botao_descriptografar()" id="botao_descriptografar" class="botaoDescriptografar">Descriptografar</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container_saida_sem_dados" id="saida_sem_dados">
+                <div class="avisoNenhumaMensagemDigitada">
+                    <h2 id="outputMensagem" class="nenhumaMensagemEncontrada">Nenhuma mensagem encontrada</h2>
+                </div>
+            </div>
+            <div class="container_saida_com_dados" id="saida_com_dados" style="display: none;">
+                <textarea name="texto_saida" id="resultado_do_texto" class="saida_do_texto" readonly></textarea>
+                <button onclick="copiar()" id="copiar" class="botaoCopiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="autor">
+            <h1>Esse projeto foi feito por <strong>Aleph Fernandes</strong></h1>
+        </div>
+    </footer>
+    <script src="app.js" defer></script>
+</body>
+
+</html>
